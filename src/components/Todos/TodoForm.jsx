@@ -20,7 +20,6 @@ function TodoForm({ addTodo }) {
         onChange={(e) => {
           setText(e.target.value);
           setDisabled(!e.target.value);
-          console.log(disabled);
         }}
       />
       <Button disabled={disabled}>Записать</Button>
