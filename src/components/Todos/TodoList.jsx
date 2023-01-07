@@ -1,13 +1,17 @@
-import style from "./TodoList.module.scss";
-import st from "./Todo.module.scss";
+import styles from "./TodoList.module.scss";
 import Todo from "./Todo";
 
-function TodoList({ todos, deleteTodo }) {
+function TodoList({ todos, deleteTodo, checkTodo }) {
   return (
-    <ul className={style.todos}>
-      {!todos.length && <li className={st.todo}>Todo List is empty</li>}
-      {todos.map((todo, index) => (
-        <Todo todo={todo} key={index} index={index} deleteTodo={deleteTodo} />
+    <ul className={styles.todos}>
+      {!todos.length && <li className={styles.noTodo}>Нет задач</li>}
+      {todos.map((todo) => (
+        <Todo
+          todo={todo}
+          key={todo.id}
+          deleteTodo={deleteTodo}
+          checkTodo={checkTodo}
+        />
       ))}
     </ul>
   );

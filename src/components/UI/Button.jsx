@@ -1,9 +1,15 @@
 import styles from "./Button.module.scss";
 
-function Button() {
+function Button({ onClick, children, title, disabled = false }) {
   return (
-    <button className={styles.button} type="submit">
-      Submit
+    <button
+      title={title}
+      className={styles.button}
+      type="submit"
+      onClick={onClick}
+      disabled={disabled}
+    >
+      {children}
     </button>
   );
 }
