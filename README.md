@@ -1,20 +1,33 @@
-# ToDo. Dev project on React.
+#### ToDo
 
-## [ToDo. Build project on GitHub.](https://uglyghoulchrist.github.io/ToDoBuild/)
+##### Список задач — позволяет:
 
-**Список задач** — позволяет: 
-- добавлять задачи, 
-- отмечать задачу выполненной,
-- возобновлять задачу,
-- удалять задачу,
-- удалять все задачи
-- удалять выполненные.
+- Добавлять задачи
+- Отмечать задачу выполненной
+- Возобновлять задачу
+- Удалять задачу
+- Удалять все задачи
+- Удалять выполненные задачи
 
 Хранит задачи в LocalStorage браузера.
 
-### Технологии, применённые в проекте:
+##### Технологии, применённые в проекте:
 
-- React, Reac-Dom, module-css.
-- Sass (SCSS), Responsive Layout (отзывчивая верстка).
-- HTML5.
+- React
+- Reac-Dom
+- CSS modules
+- Sass (SCSS)
+- Responsive Layout
+- Mobile First
+- HTML5
 
+[Code](https://github.com/UglyGhoulChrist/todo-react.git)  
+[GitHub Pages](https://uglyghoulchrist.github.io/todo-react/)  
+
+### Deploy on gh-pages:
+
+- yarn build
+- поменять в index.html, main.js пути к стилям, скрипту и картинкам на:
+    - ./static/js/main.***.js
+    - ./static/css/main.***.css
+- yarn deploy
